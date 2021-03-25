@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Dockerfile-Ruby-on-Rails
 Dockerfile para criação de uma imagem Debian com rvm, ruby 2.5.3 e o rails 6.0.0.rc1 instalados!
 
@@ -8,3 +9,6 @@ Obs: O "." depois do nome, indica que o Dockerfile esta no repositorio onde o co
 #Ex criação de um Container 
 - docker container run -it -v [volume do host(endereco da pasta)]:/home -p 3000:3000  --name [nome do container] [nome da imagem]
  
+=======
+# Dockerfile-Ruby-on-Rails
+>>>>>>> 76c0f5c71aca510b1ef86282451b7b44fb988e10
