@@ -25,9 +25,11 @@ RUN curl -sSL https://get.rvm.io | bash -s stable
 
 RUN echo 'source /usr/local/rvm/scripts/rvm' >> ~/.bashrc
 
-RUN sudo apt-get install git
+RUN sudo apt-get install git -y
 
 RUN /bin/bash -l -c "rvm install 2.5.3"
+
+RUN /bin/bash -l -c "sudo gem update --system"
 
 RUN /bin/bash -l -c "gem install rails -v 6.0.0.rc1"
 
